@@ -1,4 +1,4 @@
 # DimaDoesCode
  Main Page
 
-![Image alt](github.com/DimaDoesCode/DimaDoesCode/2493456.png)
+![Image alt](https://github.com/DimaDoesCode/DimaDoesCode/raw/master/image.png)
