@@ -6,4 +6,4 @@
 
 |Project                 |Study Type     |Status |
 |:-------------------------|:----------------|:--------|
-|Yandex_Practicum-Big_City_Music              |Сравнение предпочтений пользователей Яндекс.Музыки из Москвы и Санкт-Петербурга в зависимости от времени (утро и вечер) и дня недели (понедельник, среда, пятница)        |Complete  |
+|Yandex_Practicum-Big_City_Music              |Comparison of preferences of Yandex.Music users from Moscow and St. Petersburg depending on time (morning and evening) and day of the week (Monday, Wednesday, Friday)        |Complete  |
