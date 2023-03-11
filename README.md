@@ -11,7 +11,7 @@
 
 **StrataScratch Data Science One String solutions**
 
-|Drill                   |Study Type     |Status |
+|Drill                   |Drill Description     |Status |
 |:-----------------------|:--------------|:------|
 |[StrataScratch - Algorithm Performance](https://github.com/DimaDoesCode/StrataScratch-Algorithm_Performance) |Meta/Facebook is developing a search algorithm that will allow users to search through their post history |Passed |
 |[StrataScratch - Premium vs Freemium](https://github.com/DimaDoesCode/StrataScratch-Premium_vs_Freemium) |Find the total number of downloads for paying and non-paying users by date|Passed |
