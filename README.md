@@ -10,9 +10,9 @@
 |[Yandex Practicum - Borrower Reliability Study](https://github.com/DimaDoesCode/Yandex_Practicum-Borrower_Reliability_Study) |Borrower reliability study depending on a number of distribution categories |Complete |
 |[Yandex Practicum - Exploratory Data Analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Exploratory_Data_Analysis) | Finding interesting features and dependencies that exist in the real estate market. |Complete |
 
-**StrataScratch Python One String solutions**
+**Fun StrataScratch Puzzles in Python**
 
-|Drill                   |Drill Description     |Status |
+|Puzzle                   |Puzzle Description     |Status |
 |:-----------------------|:--------------|:------|
-|[StrataScratch - Algorithm Performance](https://github.com/DimaDoesCode/StrataScratch-Algorithm_Performance) |Meta/Facebook is developing a search algorithm that will allow users to search through their post history |Passed |
-|[StrataScratch - Premium vs Freemium](https://github.com/DimaDoesCode/StrataScratch-Premium_vs_Freemium) |Find the total number of downloads for paying and non-paying users by date|Passed |
+|[StrataScratch - Algorithm Performance](https://github.com/DimaDoesCode/StrataScratch-Algorithm_Performance) |Meta/Facebook is developing a search algorithm that will allow users to search through their post history |Puzzled out |
+|[StrataScratch - Premium vs Freemium](https://github.com/DimaDoesCode/StrataScratch-Premium_vs_Freemium) |Find the total number of downloads for paying and non-paying users by date|Puzzled out |
