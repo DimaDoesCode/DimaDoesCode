@@ -1,6 +1,6 @@
 # Some of my Doings
 
-$not mine$
+$not  mine$
 ![Image alt](https://github.com/DimaDoesCode/DimaDoesCode/raw/master/face_muzzle.png)
 
 **Yandex Data Science Practicum**
