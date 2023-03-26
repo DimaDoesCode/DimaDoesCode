@@ -1,7 +1,7 @@
 # Some of my Doings
 
 $not\ mine$
-![Image alt](https://github.com/DimaDoesCode/DimaDoesCode/raw/master/face_muzzle.png)
+![](https://github.com/DimaDoesCode/DimaDoesCode/raw/master/face_muzzle.png)
 
 **Yandex Data Science Practicum**
 
