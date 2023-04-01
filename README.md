@@ -18,3 +18,5 @@ $not\ mine$
 |:-----------------------|:--------------|:------|
 |[StrataScratch - Algorithm Performance](https://github.com/DimaDoesCode/StrataScratch-Algorithm_Performance) |Meta/Facebook is developing a search algorithm that will allow users to search through their post history |Puzzled out |
 |[StrataScratch - Premium vs Freemium](https://github.com/DimaDoesCode/StrataScratch-Premium_vs_Freemium) |Find the total number of downloads for paying and non-paying users by date|Puzzled out |
+
+<img src="https://komarev.com/ghpvc/?username=DimaDoesCode&style=flat-square&color=blue" alt=""/>
