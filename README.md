@@ -2,6 +2,7 @@
 
 $not\ mine$
 ![](https://github.com/DimaDoesCode/DimaDoesCode/raw/master/face_muzzle.png)
+![](https://komarev.com/ghpvc/?username=DimaDoesCode)
 
 **Yandex Data Science Practicum**
 
