@@ -1,7 +1,11 @@
 # Some of my Doings
 
-$not\ mine$
-![](https://github.com/DimaDoesCode/DimaDoesCode/raw/master/face_muzzle.png)
+<p><img src="https://github.com/DimaDoesCode/DimaDoesCode/raw/master/face_muzzle.png" width="320" height="160" align="left"/>
+I hold a degree in Radiophysics from Lomonosov Moscow State University, and I have authored a paper on the dynamics of superradiation in two-component inhomogeneously broadened media.
+
+My work experience includes roles as a software engineer at a medical institution, an M&C specialist at a telecommunications operator company, and a technical support engineer at a telecom service company. I advanced to the positions of senior engineer and head of the customer support department in the latter role.
+
+Furthermore, I have served as a marketing manager at a telecommunications equipment manufacturer and as an operations manager/director specializing in customer services for telecom companies. I also worked as a sales marketing manager at an agency company and advised the director general of a multi-purpose service and consulting company.<br clear="left"/></p><br>
 
 **Yandex Data Science Practicum**
 
