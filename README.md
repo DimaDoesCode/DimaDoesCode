@@ -11,17 +11,17 @@ Furthermore, I have served as a marketing manager at a telecommunications equipm
 
 |Project                 |Study Type     |Status |
 |:-----------------------|:--------------|:------|
-|[Yandex Practicum - Big City Music](https://github.com/DimaDoesCode/Yandex_Practicum-Big_City_Music) |Comparison of preferences of Yandex.Music users from Moscow and St. Petersburg depending on time. |Complete |
-|[Yandex Practicum - Borrower Reliability Study](https://github.com/DimaDoesCode/Yandex_Practicum-Borrower_Reliability_Study) |Borrower reliability study depending on a number of distribution categories. |Complete |
-|[Yandex Practicum - Exploratory Data Analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Exploratory_Data_Analysis) | Finding interesting features and dependencies that exist in the real estate market. |Complete |
-|[Yandex Practicum - Statistical data analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Statistical_Data_analysis) | Preliminary analysis of tariffs on a small sample of clients. |Complete |
+|[Yandex Practicum - Big City Music](https://github.com/DimaDoesCode/Yandex_Practicum-Big_City_Music) |Comparison of preferences of Yandex.Music users from Moscow and St. Petersburg depending on time. <i>The repository is closed for viewing.</i>|Complete |
+|[Yandex Practicum - Borrower Reliability Study](https://github.com/DimaDoesCode/Yandex_Practicum-Borrower_Reliability_Study) |Borrower reliability study depending on a number of distribution categories.  <i>The repository is closed for viewing.</i>|Complete |
+|[Yandex Practicum - Exploratory Data Analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Exploratory_Data_Analysis) | Finding interesting features and dependencies that exist in the real estate market.  <i>The repository is closed for viewing.</i>|Complete |
+|[Yandex Practicum - Statistical data analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Statistical_Data_analysis) | Preliminary analysis of tariffs on a small sample of clients.  <i>The repository is closed for viewing.</i>|Complete |
 
 **Fun StrataScratch Puzzles in Python**
 
 |Puzzle                   |Puzzle Description     |Status |
 |:-----------------------|:--------------|:------|
-|[StrataScratch - Algorithm Performance](https://github.com/DimaDoesCode/StrataScratch-Algorithm_Performance) |Meta/Facebook is developing a search algorithm that will allow users to search through their post history |Puzzled out |
-|[StrataScratch - Premium vs Freemium](https://github.com/DimaDoesCode/StrataScratch-Premium_vs_Freemium) |Find the total number of downloads for paying and non-paying users by date|Puzzled out |
+|[StrataScratch - Algorithm Performance](https://github.com/DimaDoesCode/StrataScratch-Algorithm_Performance) |Meta/Facebook is developing a search algorithm that will allow users to search through their post history. <i>The repository is closed for viewing.</i>|Puzzled out |
+|[StrataScratch - Premium vs Freemium](https://github.com/DimaDoesCode/StrataScratch-Premium_vs_Freemium) |Find the total number of downloads for paying and non-paying users by date. <i>The repository is closed for viewing.</i>|Puzzled out |
 
 <br>
 <img src="https://komarev.com/ghpvc/?username=DimaDoesCode&style=flat-square&color=blue" alt=""/>
