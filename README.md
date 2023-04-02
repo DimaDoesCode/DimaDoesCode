@@ -1,4 +1,4 @@
-# Some of my Doings
+# Some of my accomplishments
 
 <p><img src="https://github.com/DimaDoesCode/DimaDoesCode/raw/master/face_muzzle.png" width="320" height="160" align="left"/>
 I hold a degree in Radiophysics from Lomonosov Moscow State University, and I have authored a paper on the dynamics of superradiation in two-component inhomogeneously broadened media.
