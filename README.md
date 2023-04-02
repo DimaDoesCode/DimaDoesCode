@@ -5,7 +5,9 @@ I hold a degree in Radiophysics from Lomonosov Moscow State University, and I ha
 
 My work experience includes roles as a software engineer at a medical institution, an M&C specialist at a telecommunications operator company, and a technical support engineer at a telecom service company. I advanced to the positions of senior engineer and head of the customer support department in the latter role.
 
-Furthermore, I have served as a marketing manager at a telecommunications equipment manufacturer and as an operations manager/director specializing in customer services for telecom companies. I also worked as a sales marketing manager at an agency company and advised the director general of a multi-purpose service and consulting company.<br clear="left"/></p><br>
+Furthermore, I have served as a marketing manager at a telecommunications equipment manufacturer and as an operations manager/director specializing in customer services for telecom companies. I also worked as a sales marketing manager at an agency company and advised the director general of a multi-purpose service and consulting company.
+
+And here I am, with a diverse background in both technical and managerial positions in the fields of telecommunications, software engineering, and marketing.<br clear="left"/></p><br>
 
 **Yandex Data Science Practicum**
 
