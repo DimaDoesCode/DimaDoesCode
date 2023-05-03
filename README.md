@@ -20,6 +20,7 @@ And here I am, with a diverse background in both technical and managerial positi
 |[Yandex Practicum - Exploratory Data Analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Exploratory_Data_Analysis) | Finding interesting features and dependencies that exist in the real estate market.  <i>The repository is closed for viewing.</i>|Complete |
 |[Yandex Practicum - Statistical Data Analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Statistical_Data_analysis) | Preliminary analysis of tariffs on a small sample of clients.  <i>The repository is closed for viewing.</i>|Complete |
 |[Yandex Practicum - Composite Project - 1](https://github.com/DimaDoesCode/Yandex_Practicum-Composite_Project-1) | The task is to identify patterns that determine the success of a game.  <i>The repository is closed for viewing.</i>|Complete |
+|[Yandex Practicum - Introduction to Machine Learning](https://github.com/DimaDoesCode/Yandex_Practicum-Introduction_to_Machine_Learning) | The task at hand is to build a classification model that can select the appropriate tariff based on data about customer behavior for different tariffs.  <i>The repository is closed for viewing.</i>|Complete |
 
 **Fun StrataScratch Puzzles in Python**
 
