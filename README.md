@@ -21,7 +21,7 @@ And here I am, with a diverse background in both technical and managerial positi
 |[Yandex Practicum - Statistical Data Analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Statistical_Data_analysis) | Preliminary analysis of tariffs on a small sample of clients.  <i>The repository is closed for viewing.</i>|Complete |
 |[Yandex Practicum - Composite Project - 1](https://github.com/DimaDoesCode/Yandex_Practicum-Composite_Project-1) | The task is to identify patterns that determine the success of a game.  <i>The repository is closed for viewing.</i>|Complete |
 |[Yandex Practicum - Introduction to Machine Learning](https://github.com/DimaDoesCode/Yandex_Practicum-Introduction_to_Machine_Learning) | The task at hand is to build a classification model that can select the appropriate tariff based on data about customer behavior for different tariffs. <i>The repository is closed for viewing.</i>|Complete |
-|[Yandex Practicum - Supervised Learning](https://github.com/DimaDoesCode/Yandex_Practicum-Supervised_Learning) | Customers have started to leave Beta Bank. Every month. Not a lot, but it's noticeable. Bank marketers have calculated that it's cheaper to retain existing customers than to attract new ones. We need to forecast whether a customer will leave the bank in the near future or not.<i> The repository is closed for viewing.</i>|Complete |
+|[Yandex Practicum - Supervised Learning](https://github.com/DimaDoesCode/Yandex_Practicum-Supervised_Learning) | We need to forecast whether a customer will leave the bank in the near future or not.<i> The repository is closed for viewing.</i>|Complete |
 
 **Fun StrataScratch Puzzles in Python**
 
