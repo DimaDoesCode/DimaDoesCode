@@ -24,6 +24,7 @@ And here I am, with a diverse background in both technical and managerial positi
 |[Yandex Practicum - Supervised Learning](https://github.com/DimaDoesCode/Yandex_Practicum-Supervised_Learning) | We need to forecast whether a customer will leave the bank in the near future or not.<i> The repository is closed for viewing.</i>|Complete |
 |[Yandex Practicum - Machine Learning in Business](https://github.com/DimaDoesCode/Yandex_Practicum-Machine_Learning_in_Business) | This project involves building a model to identify the region with the highest profit potential for oil extraction. By analyzing the potential profit and risks using the Bootstrap technique, we aim to optimize decision-making.<i> The repository is closed for viewing.</i>|Complete |
 |[Yandex Practicum - Composite Project - 2](https://github.com/DimaDoesCode/Yandex_Practicum-Composite_Project-2) | Prepare a prototype of a machine learning model for 'Zyfra'. The company develops solutions for the efficient operation of industrial enterprises. The model should predict the gold recovery coefficient from gold-bearing ore.<i> The repository is closed for viewing.</i>|Complete |
+|[Yandex Practicum - Linear Algebra](https://github.com/DimaDoesCode/Yandex_Practicum-Linear_Algebra) | Develop a method to transform the data in a way that makes it difficult to recover personal information from it. Justify the correctness of its operation.<i> The repository is closed for viewing.</i>|Complete |
 
 <br>
 <img src="https://komarev.com/ghpvc/?username=DimaDoesCode&style=flat-square&color=blue" alt=""/>
