@@ -15,8 +15,8 @@ And here I am, with a diverse background in both technical and managerial positi
 
 |Project                 |Study Type     |Status |
 |:-----------------------|:--------------|:------|
-|[Yandex Practicum - Big City Music](https://github.com/DimaDoesCode/Yandex_Practicum-Big_City_Music) |Comparison of preferences of Yandex.Music users from Moscow and St. Petersburg depending on time. <i>The repository is closed for viewing.</i>|Complete |
-|[Yandex Practicum - Borrower Reliability Study](https://github.com/DimaDoesCode/Yandex_Practicum-Borrower_Reliability_Study) |Borrower reliability study depending on a number of distribution categories.  <i>The repository is closed for viewing.</i>|Complete |
+|[Yandex Practicum - Basic Python](https://github.com/DimaDoesCode/Yandex_Practicum-Big_City_Music) |Comparison of preferences of Yandex.Music users from Moscow and St. Petersburg depending on time. <i>The repository is closed for viewing.</i>|Complete |
+|[Yandex Practicum - Data preprocessing](https://github.com/DimaDoesCode/Yandex_Practicum-Borrower_Reliability_Study) |Borrower reliability study depending on a number of distribution categories.  <i>The repository is closed for viewing.</i>|Complete |
 |[Yandex Practicum - Exploratory Data Analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Exploratory_Data_Analysis) | Finding interesting features and dependencies that exist in the real estate market.  <i>The repository is closed for viewing.</i>|Complete |
 |[Yandex Practicum - Statistical Data Analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Statistical_Data_analysis) | Preliminary analysis of tariffs on a small sample of clients.  <i>The repository is closed for viewing.</i>|Complete |
 |[Yandex Practicum - Composite Project - 1](https://github.com/DimaDoesCode/Yandex_Practicum-Composite_Project-1) | The task is to identify patterns that determine the success of a game.  <i>The repository is closed for viewing.</i>|Complete |
