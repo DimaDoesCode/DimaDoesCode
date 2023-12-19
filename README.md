@@ -37,7 +37,7 @@ And here I am, with a diverse background in both technical and managerial positi
 
 |Project                 |Study Type     |Status |
 |:-----------------------|:--------------|:------|
-|[DL and NLP - GeoNames](https://github.com/DimaDoesCode/DL_and_NLP-Geonames) |The task of this project is to develop a solution for mapping geographical names to the standardized names from The GeoNames geographical database for internal use by the Yandex Practicum Career Center. <i>The repository is open for viewing.</i>|Complete |
+|[DL and NLP - GeoNames](https://github.com/DimaDoesCode/DL_and_NLP-Geonames) |The goal of this project is to develop a solution for mapping geographical names to the standardized names from The GeoNames geographical database for internal use by the Yandex Practicum Career Center. <i>The repository is open for viewing.</i>|Complete |
 
 <br>
 <img src="https://komarev.com/ghpvc/?username=DimaDoesCode&style=flat-square&color=blue" alt=""/>
