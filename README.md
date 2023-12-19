@@ -32,4 +32,12 @@ And here I am, with a diverse background in both technical and managerial positi
 |[Yandex Practicum - Diploma Project](https://github.com/DimaDoesCode/Yandex_Practicum-Diploma_Project) | TeleDom, a telecommunications company, aims to combat customer churn. To achieve this, its staff will start offering promo codes and special conditions to those planning to terminate their communication services. To proactively identify such users, TeleDom needs a model that predicts whether a subscriber will terminate their contract. The operator's team has gathered personal data about some customers, along with information about their tariffs and services. Your task is to train a model on this data to predict customer churn. <i>The repository is open for viewing.</i>|Complete |
 
 <br>
+
+**Data Science. Deep learning and NLP**
+
+|Project                 |Study Type     |Status |
+|:-----------------------|:--------------|:------|
+|[DL and NLP - GeoNames](https://github.com/DimaDoesCode/DL_and_NLP-Geonames) |The task of this project is to develop a solution for mapping geographical names to the standardized names from The GeoNames geographical database for internal use by the Yandex Practicum Career Center. <i>The repository is open for viewing.</i>|Complete |
+
+<br>
 <img src="https://komarev.com/ghpvc/?username=DimaDoesCode&style=flat-square&color=blue" alt=""/>
