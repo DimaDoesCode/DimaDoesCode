@@ -1,4 +1,4 @@
-[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/DimaDoesCode/README.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/DimaDoesCode/DimaDoesCode/blob/master/README.md)
 
 # Некоторые из моих достижений
 
