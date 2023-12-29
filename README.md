@@ -1,3 +1,5 @@
+[![ru](https://img.shields.io/badge/lang-ru-blue.svg)](https://github.com/DimaDoesCode/README.ru.md)
+
 # Some of my accomplishments
 
 <p><img src="https://github.com/DimaDoesCode/DimaDoesCode/raw/master/face_muzzle.png" width="320" height="160" align="left"/>
