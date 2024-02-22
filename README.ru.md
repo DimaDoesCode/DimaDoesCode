@@ -42,4 +42,12 @@
 |[DL and NLP - GeoNames](https://github.com/DimaDoesCode/DL_and_NLP-Geonames) |Цель проекта состоит в разработке решения для сопоставления географических названий стандартизированным именам из географической базы данных GeoNames для внутреннего использования Центром Карьеры Yandex Practicum. <i>Репозиторий открыт для просмотра.</i>|Завершен |
 
 <br>
+
+**Classisal ML**
+
+| Проект                 | Тип работы     | Статус |
+|:-----------------------|:--------------|:------|
+|[NPD prediction](https://github.com/DimaDoesCode/ML_and_Time-Series |Цель проекта состоит в разработке решения для сопоставления географических названий стандартизированным именам из географической базы данных GeoNames для внутреннего использования Центром Карьеры Yandex Practicum. <i>Репозиторий открыт для просмотра.</i>|Завершен |
+
+<br>
 <img src="https://komarev.com/ghpvc/?username=DimaDoesCode&style=flat-square&color=blue" alt=""/>
