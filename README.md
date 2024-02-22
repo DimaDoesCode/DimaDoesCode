@@ -47,7 +47,7 @@ And here I am, with a diverse background in both technical and managerial positi
 
 | Project                 | Type of Work   | Status |
 |:-----------------------|:--------------|:------|
-|[NPD prediction](https://github.com/DimaDoesCode/ML_and_Time-Series) |The project aims to develop a solution for mapping geographic names to standardized names from the GeoNames geographical database for internal use by the Yandex Practicum Career Center. <i>The repository is open for viewing.</i>|Completed |
+|[NPD prediction](https://github.com/DimaDoesCode/ML_and_Time-Series) |Predicting the next purchase holds strategic importance for businesses as it allows optimizing marketing efforts, improving customer service, and increasing overall profitability. The goal of this project is not only to develop an accurate prediction model but also to understand the key factors influencing customer behavior when making purchases. <i>The repository is open for viewing.</i>|Completed |
 
 <br>
 <img src="https://komarev.com/ghpvc/?username=DimaDoesCode&style=flat-square&color=blue" alt=""/>
