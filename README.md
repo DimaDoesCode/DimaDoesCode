@@ -43,7 +43,7 @@ And here I am, with a diverse background in both technical and managerial positi
 
 <br>
 
-**Classisal ML**
+**Classiсal ML**
 
 | Project                 | Type of Work   | Status |
 |:-----------------------|:--------------|:------|
