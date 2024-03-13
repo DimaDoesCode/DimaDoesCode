@@ -45,7 +45,7 @@ And here I am, with a diverse background in both technical and managerial positi
 
 **Classiсal ML**
 
-| Project                 | Type of Work   | Status |
+| Project                 |Job Type   | Status |
 |:-----------------------|:--------------|:------|
 |[NPD prediction](https://github.com/DimaDoesCode/ML_and_Time-Series) |Predicting the next purchase holds strategic importance for businesses as it allows optimizing marketing efforts, improving customer service, and increasing overall profitability. The goal of this project is not only to develop an accurate prediction model but also to understand the key factors influencing customer behavior when making purchases. <i>The repository is open for viewing.</i>|Completed |
 
