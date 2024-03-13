@@ -48,7 +48,7 @@ And here I am, with a diverse background in both technical and managerial positi
 | Project                 |Job Type   | Status |
 |:-----------------------|:--------------|:------|
 |[NPD prediction](https://github.com/DimaDoesCode/ML_and_Time-Series) |Predicting the next purchase holds strategic importance for businesses as it allows optimizing marketing efforts, improving customer service, and increasing overall profitability. The goal of this project is not only to develop an accurate prediction model but also to understand the key factors influencing customer behavior when making purchases. <i>The repository is open for viewing.</i>|Completed |
-|[NP Mutilable prediction](https://github.com/DimaDoesCode/ML_DL_Multilable_Prediction) |The task of predicting the next order of a user is proposed (regardless of the specific moment in time when this order will occur). A user's order consists of a list of unique product categories, regardless of how many products of each category they have taken. This project utilizes a fully connected feed-forward neural network. <i>The repository is open for viewing.</i>|Completed |
+|[NP Mutilabel prediction](https://github.com/DimaDoesCode/ML_DL_Multilabel_Prediction) |The task of predicting the next order of a user is proposed (regardless of the specific moment in time when this order will occur). A user's order consists of a list of unique product categories, regardless of how many products of each category they have taken. This project utilizes a fully connected feed-forward neural network. <i>The repository is open for viewing.</i>|Completed |
 
 <br>
 <img src="https://komarev.com/ghpvc/?username=DimaDoesCode&style=flat-square&color=blue" alt=""/>
