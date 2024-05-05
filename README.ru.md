@@ -35,11 +35,12 @@
 
 <br>
 
-**Data Science. Deep Learning and NLP**
+**Data Science. Deep Learning, NLP and CV**
 
 | Проект                 | Тип работы     | Статус |
 |:-----------------------|:--------------|:------|
 |[DL and NLP - GeoNames](https://github.com/DimaDoesCode/DL_and_NLP-Geonames) |Цель проекта состоит в разработке решения для сопоставления географических названий стандартизированным именам из географической базы данных GeoNames для внутреннего использования Центром Карьеры Yandex Practicum. <i>Репозиторий открыт для просмотра.</i>|Завершен |
+|[DL and CV - Predicting Music Genre](https://github.com/DimaDoesCode/VC_Predicting_Music_Genre) |Цель проекта состоит в необходимости разработать модель, которая определит жанр музыкального альбома по изображению его обложки. <i>Репозиторий открыт для просмотра.</i>|Завершен |
 
 <br>
 

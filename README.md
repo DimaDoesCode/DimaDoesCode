@@ -40,6 +40,7 @@ And here I am, with a diverse background in both technical and managerial positi
 |Project                 |Job Type       |Status |
 |:-----------------------|:--------------|:------|
 |[DL and NLP - GeoNames](https://github.com/DimaDoesCode/DL_and_NLP-Geonames) |The goal of this project is to develop a solution for mapping geographical names to the standardized names from The GeoNames geographical database for internal use by the Yandex Practicum Career Center. <i>The repository is open for viewing.</i>|Complete |
+|[DL and CV - Predicting Music Genre](https://github.com/DimaDoesCode/VC_Predicting_Music_Genre) |The project aims to develop a model that will classify the genre of a music album based on its cover image. <i>The repository is open for viewing.</i>|Complete |
 
 <br>
 
