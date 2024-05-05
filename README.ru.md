@@ -35,7 +35,7 @@
 
 <br>
 
-**Data Science. Deep Learning, NLP and CV**
+**Data Science. Deep Learning NLP and CV**
 
 | Проект                 | Тип работы     | Статус |
 |:-----------------------|:--------------|:------|

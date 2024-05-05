@@ -35,7 +35,7 @@ And here I am, with a diverse background in both technical and managerial positi
 
 <br>
 
-**Data Science. Deep Learning and NLP**
+**Data Science. Deep Learning NLP and CV**
 
 |Project                 |Job Type       |Status |
 |:-----------------------|:--------------|:------|
