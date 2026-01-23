@@ -2,7 +2,7 @@
 
 # Some of my work and interests
 
-<p><img src="https://github.com/DimaDoesCode/DimaDoesCode/raw/master/face_muzzle.png" width="320" height="160" align="left"/>
+<p><img src="https://github.com/DimaDoesCode/DimaDoesCode/blob/main/face_muzzle.png" width="320" height="160" align="left"/>
 I hold a degree in Radiophysics from Lomonosov Moscow State University. My background includes telecommunications, software engineering, and applied data analysis, combining hands-on technical work with experience in operations, support, and engineering management.
 
 Data science and machine learning remain areas of strong personal and professional interest for me, especially in applied and exploratory contexts. Alongside this, I work on system-level and networking projects, including traffic control and automation for embedded and Linux-based systems.
