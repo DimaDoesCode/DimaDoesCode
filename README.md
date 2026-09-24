@@ -13,15 +13,30 @@ Most of the work presented in this profile consists of independent and pet proje
 
 ### Featured Projects
 
+
+
+**[Northstar Model Validation](https://github.com/DimaDoesCode/Northstar-Model-Validation)**  
+An independent **model risk / model validation framework** for a machine-learning credit risk model, built on the public Home Credit Default Risk dataset.  
+Covers discrimination, calibration, stability, and segment analysis—separating raw model performance from a documented validation conclusion and its explicit limitations.  
+<i>Portfolio project, MIT licensed.</i>
+
 **[MAC-Shaper](https://github.com/DimaDoesCode/MAC-Shaper)**  
 A lightweight traffic shaping solution for **OpenWrt** that provides **per-MAC upload and download bandwidth control** using Linux `tc` and `ifb`.  
 Includes a backend script, LuCI web interface, and prebuilt packages for embedded devices.  
 <i>Fully documented, actively maintained, and production-ready.</i>
 
+---
+
+### Home Assistant Projects
+
 **[HA-OpenWrt-SSH](https://github.com/DimaDoesCode/HA-OpenWrt-SSH)**  
 A **Home Assistant** custom integration for comprehensive **OpenWrt router monitoring** via SSH.  
 Provides real-time metrics including CPU temperature, load average, RAM usage, VPN status, and disk usage—data not available through standard UPnP integrations.  
 <i>Secure, efficient, HACS-ready.</i>
+
+**[HA-Hybrid-Conversation](https://github.com/DimaDoesCode/HA-Hybrid-Conversation)**  
+A **Home Assistant** custom integration that combines the native HA conversation agent for device/intent handling with a **local Ollama LLM** for natural, freeform replies—no cloud, no API keys.  
+<i>HACS-ready, MIT licensed.</i>
 
 ---
 
