@@ -13,7 +13,9 @@ Most of the work presented in this profile consists of independent and pet proje
 
 ### Featured Projects
 
-
+**[LLM Financial Decision Validation](https://github.com/DimaDoesCode/LLM-Financial-Validation)**  
+A compact validation framework for an **LLM-based financial decision system** (`Human ↔ LLM ↔ Decision`), going beyond accuracy to test consistency, framing sensitivity, user-position mirroring, belief reinforcement, and decision traceability.  
+<i>Six-stage validation (V1–V6), portfolio project, MIT licensed.</i>
 
 **[Northstar Model Validation](https://github.com/DimaDoesCode/Northstar-Model-Validation)**  
 An independent **model risk / model validation framework** for a machine-learning credit risk model, built on the public Home Credit Default Risk dataset.  
@@ -23,7 +25,7 @@ Covers discrimination, calibration, stability, and segment analysis—separating
 **[MAC-Shaper](https://github.com/DimaDoesCode/MAC-Shaper)**  
 A lightweight traffic shaping solution for **OpenWrt** that provides **per-MAC upload and download bandwidth control** using Linux `tc` and `ifb`.  
 Includes a backend script, LuCI web interface, and prebuilt packages for embedded devices.  
-<i>Fully documented, actively maintained, and production-ready.</i>
+<i>Fully documented, and production-ready.</i>
 
 ---
 
