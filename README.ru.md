@@ -1,88 +1,138 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/DimaDoesCode/DimaDoesCode/blob/master/README.md)
 
-# Некоторые мои проекты и интересы
+# Аудит решений AI | Валидация LLM и AI-систем
 
-<p><img src="https://github.com/DimaDoesCode/DimaDoesCode/blob/main/face_muzzle.png" width="320" height="160" align="left"/>
-Я окончил радиофизический факультет МГУ имени М. В. Ломоносова. Мой профессиональный опыт включает телекоммуникации, разработку программного обеспечения и прикладной анализ данных, сочетая инженерную практику с задачами эксплуатации, поддержки и управления техническими процессами.
+Я занимаюсь **валидацией и аудитом систем принятия решений на основе AI**, с особым фокусом на Large Language Models (LLM).
 
-Data Science и машинное обучение остаются для меня интересными и значимыми направлениями, прежде всего в прикладном и исследовательском контексте. Параллельно я занимаюсь системными и сетевыми проектами, связанными с управлением трафиком, автоматизацией и разработкой решений для встраиваемых и Linux-систем.
+В текущей работе меня интересует поведение AI-систем при принятии решений — не только правильность ответа, но и то, сохраняется ли решение **последовательным, устойчивым, воспроизводимым и объяснимым при изменении контекста взаимодействия**.
 
-Большая часть представленных здесь работ — это независимые pet-проекты. Они возникли из профессионального интереса, желания решать практические задачи и глубже понимать устройство систем — как с точки зрения данных, так и на уровне низкоуровневой инженерии, а не как коммерческий продакшн для крупных компаний.<br clear="left"/></p><br>
+Основные направления:
 
----
+- **Валидация решений LLM**
+- **AI / Model Risk**
+- **Корректность и согласованность решений**
+- **Тестирование устойчивости и стабильности**
+- **Чувствительность к формулировке контекста (framing sensitivity)**
+- **Риски взаимодействия человека и LLM**
+- **Трассируемость решений**
+- **Воспроизводимые validation-процессы на Python**
 
-### Проекты в фокусе
+Мой профессиональный опыт объединяет **физику, разработку ПО, телекоммуникации, бизнес-аналитику и Data Science**.
 
-**[LLM Financial Decision Validation](https://github.com/DimaDoesCode/LLM-Financial-Validation)**  
-Компактный фреймворк для валидации **системы финансовых решений на базе LLM** (`Human ↔ LLM ↔ Decision`) — помимо точности проверяет устойчивость решений, чувствительность к формулировке, влияние позиции пользователя, закрепление убеждений в диалоге и прослеживаемость решений.  
-<i>Валидация в шесть этапов (V1–V6), портфолио-проект, лицензия MIT.</i>
-
-**[Northstar Model Validation](https://github.com/DimaDoesCode/Northstar-Model-Validation)**  
-Независимый **фреймворк для валидации модели кредитного риска** (Model Risk / Model Validation), построенный на публичном датасете Home Credit Default Risk.  
-Охватывает дискриминационную способность, калибровку, устойчивость и сегментный анализ модели — отделяя саму эффективность модели от документированного заключения по валидации и его явных ограничений.  
-<i>Портфолио-проект, лицензия MIT.</i>
-
-**[MAC-Shaper](https://github.com/DimaDoesCode/MAC-Shaper)**  
-Лёгкое решение для **OpenWrt**, предназначенное для управления входящей и исходящей скоростью **по MAC-адресам** с использованием Linux `tc` и `ifb`.  
-Включает backend-скрипт, веб-интерфейс LuCI и готовые пакеты для встраиваемых устройств.  
-<i>Полностью задокументирован и готов к практическому использованию.</i>
+Большинство проектов в этом профиле — **независимые и pet-проекты**, созданные для исследования практических технических задач, а не как коммерческая разработка для крупных организаций.
 
 ---
 
-### Проекты для Home Assistant
+## Избранные проекты
 
-**[HA-OpenWrt-SSH](https://github.com/DimaDoesCode/HA-OpenWrt-SSH)**  
-Кастомная интеграция для **Home Assistant**, обеспечивающая комплексный **мониторинг OpenWrt роутера** через SSH.  
-Предоставляет метрики в реальном времени: температура CPU, нагрузка системы, использование RAM, статус VPN и диска — данные, недоступные через стандартные UPnP интеграции.  
-<i>Безопасно, эффективно, готово к установке через HACS.</i>
+### [LLM Financial Decision Validation](https://github.com/DimaDoesCode/LLM-Financial-Validation)
 
-**[HA-Hybrid-Conversation](https://github.com/DimaDoesCode/HA-Hybrid-Conversation)**  
-Кастомная интеграция для **Home Assistant**, объединяющая встроенный агент разговоров HA для управления устройствами с **локальной LLM через Ollama** для естественных, свободных ответов — без облака и API-ключей.  
-<i>Готово к установке через HACS, лицензия MIT.</i>
+Компактный фреймворк для валидации **финансовой системы принятия решений на основе LLM**.
+
+**Human ↔ LLM ↔ Decision**
+
+Фреймворк выходит за рамки обычной оценки accuracy и исследует поведение системы по нескольким направлениям:
+
+- Корректность решений
+- Согласованность и стабильность
+- Чувствительность к формулировке контекста
+- Отражение позиции пользователя
+- Закрепление пользовательских убеждений
+- Трассируемость решений
+
+*Portfolio project · MIT License*
+
+### [Northstar Model Validation](https://github.com/DimaDoesCode/Northstar-Model-Validation)
+
+Независимый **фреймворк Model Risk и Model Validation** для ML-модели кредитного риска.
+
+Охватывает discrimination, calibration, stability и segment performance, разделяя **характеристики модели, validation evidence и итоговые validation conclusions**.
+
+*Portfolio project · MIT License*
+
+### [MAC-Shaper](https://github.com/DimaDoesCode/MAC-Shaper)
+
+Лёгкое решение для **управления сетевым трафиком в OpenWrt**, обеспечивающее ограничение скорости загрузки и выгрузки для отдельных MAC-адресов с использованием Linux `tc` и `ifb`.
+
+Включает backend, интерфейс LuCI и пакеты для embedded-устройств.
+
+*Independent systems / networking project*
 
 ---
 
-## Независимые и прикладные проекты
+## Home Assistant & Local AI
 
-### Классическое машинное обучение
+### [HA-OpenWrt-SSH](https://github.com/DimaDoesCode/HA-OpenWrt-SSH)
 
-| Проект | Тип | Статус |
-|:-------|:----|:-------|
-|[Прогноз следующей покупки](https://github.com/DimaDoesCode/ML_and_Time-Series) |Анализ поведения клиентов для оптимизации бизнес-решений.|Завершён |
-|[Мульти-лейбл прогноз покупок](https://github.com/DimaDoesCode/ML_DL_Multilabel_Prediction) |Прогноз набора категорий следующего заказа пользователя.|Завершён |
+Custom integration для Home Assistant, обеспечивающая мониторинг роутеров OpenWrt через SSH.
+
+Предоставляет данные о температуре CPU, нагрузке, RAM, VPN и дисковом пространстве.
+
+### [HA-Hybrid-Conversation](https://github.com/DimaDoesCode/HA-Hybrid-Conversation)
+
+Custom integration для Home Assistant, объединяющая штатный conversation agent с **локальной LLM Ollama** для формирования свободных ответов.
+
+*No cloud API required · MIT License*
+
+---
+
+## Технический опыт
+
+До перехода в Data Science и AI validation моя работа включала:
+
+- Разработку ПО и системную интеграцию
+- Телекоммуникационные и сетевые системы
+- Linux / Unix
+- Техническую поддержку и IT-инфраструктуру
+- Бизнес-аналитику и прогнозирование выручки
+- Математическое моделирование
+
+Этот опыт продолжает определять мой подход к AI-системам: **я рассматриваю их как системы, которые необходимо тестировать, измерять и понимать, а не только как модели, которые нужно обучать.**
+
+---
+
+## Data Science & Machine Learning — Portfolio
+
+### Classical ML
+
+| Проект | Задача | Статус |
+|:-------|:-------|:-------|
+| [NPD prediction](https://github.com/DimaDoesCode/ML_and_Time-Series) | Предсказание следующей покупки для анализа поведения клиентов и оптимизации бизнес-решений. | Complete |
+| [NP Multilabel prediction](https://github.com/DimaDoesCode/ML_DL_Multilabel_Prediction) | Предсказание следующего заказа пользователя как набора категорий товаров с использованием полносвязной нейронной сети. | Complete |
 
 <br>
-
-## Data Science и машинное обучение (прикладные и учебные проекты)
 
 ### Yandex Data Science Practicum
 
-| Проект | Описание | Статус |
-|:-------|:----------|:-------|
-|[Базовый Python](https://github.com/DimaDoesCode/Yandex_Practicum-Big_City_Music) |Анализ пользовательских предпочтений на данных Yandex.Music.|Завершён |
-|[Предобработка данных](https://github.com/DimaDoesCode/Yandex_Practicum-Borrower_Reliability_Study) |Исследование факторов платёжеспособности клиентов.|Завершён |
-|[Исследовательский анализ данных](https://github.com/DimaDoesCode/Yandex_Practicum-Exploratory_Data_Analysis) |Анализ рынка недвижимости.|Завершён |
-|[Статистический анализ данных](https://github.com/DimaDoesCode/Yandex_Practicum-Statistical_Data_analysis) |Анализ поведения клиентов мобильного оператора.|Завершён |
-|[Композитный проект – 1](https://github.com/DimaDoesCode/Yandex_Practicum-Composite_Project-1) |Определение факторов успешности игр.|Завершён |
-|[Введение в ML](https://github.com/DimaDoesCode/Yandex_Practicum-Introduction_to_Machine_Learning) |Модель классификации тарифов.|Завершён |
-|[Обучение с учителем](https://github.com/DimaDoesCode/Yandex_Practicum-Supervised_Learning) |Прогноз оттока клиентов банка.|Завершён |
-|[ML в бизнесе](https://github.com/DimaDoesCode/Yandex_Practicum-Machine_Learning_in_Business) |Оценка прибыли и рисков.|Завершён |
-|[Композитный проект – 2](https://github.com/DimaDoesCode/Yandex_Practicum-Composite_Project-2) |Прогноз коэффициента извлечения золота.|Завершён |
-|[Линейная алгебра](https://github.com/DimaDoesCode/Yandex_Practicum-Linear_Algebra) |Защита персональных данных.|Завершён |
-|[Численные методы](https://github.com/DimaDoesCode/Yandex_Practicum-Numerical_Analysis) |Оценка рыночной стоимости автомобилей.|Завершён |
-|[Временные ряды](https://github.com/DimaDoesCode/Yandex_Practicum-Time_Series) |Прогноз спроса на такси.|Завершён |
-|[ML для текста](https://github.com/DimaDoesCode/Yandex_Practicum-Machine_Learning_for_Text) |Определение токсичных комментариев.|Завершён |
-|[Компьютерное зрение](https://github.com/DimaDoesCode/Yandex_Practicum-Computer_Vision) |Определение возраста по фотографии.|Завершён |
-|[Дипломный проект](https://github.com/DimaDoesCode/Yandex_Practicum-Diploma_Project) |Прогноз оттока клиентов телеком-оператора.|Завершён |
+| Проект | Задача | Статус |
+|:-------|:-------|:-------|
+| [Basic Python](https://github.com/DimaDoesCode/Yandex_Practicum-Big_City_Music) | Проверка данных и сравнение поведения пользователей на реальных данных Yandex.Music. | Complete |
+| [Data preprocessing](https://github.com/DimaDoesCode/Yandex_Practicum-Borrower_Reliability_Study) | Исследование влияния семейного положения и наличия детей на возврат кредита. | Complete |
+| [Exploratory Data Analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Exploratory_Data_Analysis) | Анализ рынка недвижимости на данных Yandex.Real Estate. | Complete |
+| [Statistical Data Analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Statistical_Data_analysis) | Анализ поведения клиентов для оптимизации тарифов. | Complete |
+| [Composite Project - 1](https://github.com/DimaDoesCode/Yandex_Practicum-Composite_Project-1) | Выявление закономерностей, определяющих успешность компьютерных игр. | Complete |
+| [Introduction to Machine Learning](https://github.com/DimaDoesCode/Yandex_Practicum-Introduction_to_Machine_Learning) | Построение модели классификации для выбора тарифа. | Complete |
+| [Supervised Learning](https://github.com/DimaDoesCode/Yandex_Practicum-Supervised_Learning) | Предсказание оттока клиентов банка. | Complete |
+| [Machine Learning in Business](https://github.com/DimaDoesCode/Yandex_Practicum-Machine_Learning_in_Business) | Анализ прибыли и рисков для регионов добычи нефти. | Complete |
+| [Composite Project - 2](https://github.com/DimaDoesCode/Yandex_Practicum-Composite_Project-2) | Предсказание коэффициента восстановления золота в промышленном процессе. | Complete |
+| [Linear Algebra](https://github.com/DimaDoesCode/Yandex_Practicum-Linear_Algebra) | Преобразование данных для защиты персональной информации. | Complete |
+| [Numerical Analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Numerical_Analysis) | Предсказание стоимости автомобилей по техническим характеристикам. | Complete |
+| [Time Series](https://github.com/DimaDoesCode/Yandex_Practicum-Time_Series) | Прогнозирование спроса на такси в аэропортах. | Complete |
+| [Machine Learning for Text](https://github.com/DimaDoesCode/Yandex_Practicum-Machine_Learning_for_Text) | Определение токсичных комментариев для модерации. | Complete |
+| [Computer Vision](https://github.com/DimaDoesCode/Yandex_Practicum-Computer_Vision) | Предсказание возраста по фотографии. | Complete |
+| [Diploma Project](https://github.com/DimaDoesCode/Yandex_Practicum-Diploma_Project) | Предсказание оттока клиентов телекоммуникационного оператора. | Complete |
 
 <br>
 
-### Глубинное обучение: NLP и компьютерное зрение
+### Deep Learning: NLP & Computer Vision
 
-| Проект | Тип | Статус |
-|:-------|:----|:-------|
-|[DL & NLP – GeoNames](https://github.com/DimaDoesCode/DL_and_NLP-Geonames) |Нормализация географических названий.|Завершён |
-|[DL & CV – Музыкальные жанры](https://github.com/DimaDoesCode/VC_Predicting_Music_Genre) |Классификация жанра по обложке альбома.|Завершён |
+| Проект | Задача | Статус |
+|:-------|:-------|:-------|
+| [DL & NLP – GeoNames](https://github.com/DimaDoesCode/DL_and_NLP-Geonames) | Нормализация географических названий с использованием GeoNames. | Complete |
+| [DL & CV – Music Genre Prediction](https://github.com/DimaDoesCode/VC_Predicting_Music_Genre) | Классификация музыкального жанра по изображению обложки альбома. | Complete |
 
 <br>
+
+---
+
 <img src="https://komarev.com/ghpvc/?username=DimaDoesCode&style=flat-square&color=blue" alt=""/>
