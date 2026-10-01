@@ -23,7 +23,9 @@ Most projects in this profile are **independent and pet projects**, created to i
 
 ---
 
-## Featured Projects
+## LLM Validation & Audit
+
+Projects focused on **validating and auditing the decisions of LLM-based systems** — not just building with LLMs, but testing whether their decisions are correct, consistent, and fair under scrutiny.
 
 ### [LLM Financial Decision Validation](https://github.com/DimaDoesCode/LLM-Financial-Validation)
 
@@ -41,6 +43,18 @@ The framework goes beyond accuracy and evaluates decision behaviour across multi
 - Decision traceability
 
 *Portfolio project · MIT License*
+
+### [LLM Style Audit](https://github.com/DimaDoesCode/LLM-Style-Audit)
+
+Does an LLM reward *how* you write, not *what* you say? An audit of LLM decisions on synthetic social-benefit applications, where identical facts are rendered in different writing styles — formal, rude/sloppy, emotional, and Russian.
+
+Three checks: accuracy by style against a code-computed reference, the *price of style* (shift in approval rate vs. a formal baseline), and whether the model's rationale discloses style as a reason when a decision changes.
+
+*Portfolio project · MIT License*
+
+---
+
+## Featured Projects
 
 ### [Northstar Model Validation](https://github.com/DimaDoesCode/Northstar-Model-Validation)
 
