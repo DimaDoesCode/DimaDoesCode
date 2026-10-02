@@ -60,6 +60,14 @@ Separates **final decision accuracy** from **decision trajectory correctness**: 
 
 *Portfolio project · MIT License*
 
+### [Should the LLM Ask?](https://github.com/DimaDoesCode/LLM-Validation-Should-the-LLM-Ask)
+
+Does an LLM know when to answer, when to ask a clarifying question, and when to challenge a false or unsupported premise? A black-box validation of this three-way decision boundary (`ANSWER` / `ASK` / `CHALLENGE`), grounded in recent clarification and ambiguity-recognition research.
+
+V1 scored **78.6%** on action selection (83.3% on the core ask-vs-answer boundary), with clear failure modes: material ambiguity and unsupported premises prove substantially harder than straightforward missing-information cases. V2 (clarification quality — *does it ask for the right thing?*) is planned next.
+
+*Portfolio project · MIT License*
+
 ---
 
 ## Featured Projects
