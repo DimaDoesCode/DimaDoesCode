@@ -52,6 +52,14 @@ Three checks: accuracy by style against a code-computed reference, the *price of
 
 *Portfolio project · MIT License*
 
+### [LLM Evidence Update Validation](https://github.com/DimaDoesCode/LLM-Evidence-Update-Validation)
+
+Can an LLM revise a decision when new evidence warrants a reversal — while remaining stable when it doesn't? A sequential evidence-update experiment using synthetic incident-diagnosis cases, grounded in the belief-revision and anchoring literature.
+
+Separates **final decision accuracy** from **decision trajectory correctness**: V1 found a 100% final accuracy but only 60% fully correct trajectories, showing the model sometimes reverses its decision a stage too early or too late even when it lands on the right answer.
+
+*Portfolio project · MIT License*
+
 ---
 
 ## Featured Projects
