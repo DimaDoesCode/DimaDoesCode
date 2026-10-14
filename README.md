@@ -1,168 +1,72 @@
-[![ru](https://img.shields.io/badge/lang-ru-blue.svg)](https://github.com/DimaDoesCode/DimaDoesCode/blob/master/README.ru.md)
+[![ru](https://img.shields.io/badge/lang-ru-blue.svg)](README.ru.md)
 
-# AI Decision Auditor | LLM & AI Validation
+# Dmitry Kobelev
 
-I work on **validation and audit of AI-based decision systems**, with a focus on Large Language Models (LLMs).
+Quantitative analyst moving into **AI governance, model validation and LLM evaluation**.
+Background: Radiophysics (Lomonosov Moscow State University), 12+ years in telecom owning revenue forecasts that senior leadership relied on, and applied data science since 2023.
 
-My current work explores how AI systems behave when making decisions — not only whether an answer is correct, but whether the decision remains **consistent, robust, traceable, and resistant to changes in conversational context**.
+I test how LLM-based decision systems actually behave: not only whether the answer is correct, but whether the decision is stable, sensitive to the right evidence, honest about its reasons, and aware of when to ask instead of answer.
 
-My main areas of interest include:
-
-- **LLM decision validation**
-- **AI / Model Risk**
-- **Decision correctness and consistency**
-- **Robustness and stability testing**
-- **Framing sensitivity**
-- **Human–LLM interaction risk**
-- **Decision traceability**
-- **Reproducible Python-based validation**
-
-My background combines **physics, software engineering, telecommunications, business analytics, and data science**.
-
-Most projects in this profile are **independent and pet projects**, created to investigate practical technical problems rather than as commercial work for large organizations.
+[LinkedIn](https://www.linkedin.com/in/dima-does-code) · [Hugging Face](https://huggingface.co/dima-does-code)
 
 ---
 
-## LLM Validation & Audit
+## LLM decision validation
 
-Projects focused on **validating and auditing the decisions of LLM-based systems** — not just building with LLMs, but testing whether their decisions are correct, consistent, and fair under scrutiny.
+A series of small, reproducible black-box experiments on synthetic data. Shared method: controlled cases and paired perturbations, reference decisions fixed in advance, raw outputs stored, failure modes named, limitations stated up front.
 
-### [LLM Financial Decision Validation](https://github.com/DimaDoesCode/LLM-Financial-Validation)
+| Project | Question | Headline result |
+|---|---|---|
+| [LLM-Financial-Validation](https://github.com/DimaDoesCode/LLM-Financial-Validation) | Does an LLM financial decision depend on how the case is worded, framed and discussed? | 86% accuracy overall, but about 50% on conflicting-signal cases; rationale traceability is weak (15.8% overall) |
+| [LLM-Style-Audit](https://github.com/DimaDoesCode/LLM-Style-Audit) | Does an LLM reward how you write, not what you say? | Under an explicit policy 0 of 120 style comparisons changed a decision; with reviewer discretion all 9 style-driven changes went toward APPROVE |
+| [LLM-Evidence-Update-Validation](https://github.com/DimaDoesCode/LLM-Evidence-Update-Validation) | Does the model revise a decision at the right moment when evidence arrives step by step? | 100% final accuracy, but only 60% fully correct decision trajectories |
+| [LLM-Validation-Should-the-LLM-Ask](https://github.com/DimaDoesCode/LLM-Validation-Should-the-LLM-Ask) | Does the model know when to answer, ask, or challenge a false premise? | 78.6% overall; 50% on materially ambiguous requests and on false premises |
+| [LLM-Validation-Candidate-Screening-Ranking-Stability](https://github.com/DimaDoesCode/LLM-Validation-Candidate-Screening-Ranking-Stability) | Is an LLM ranking of job candidates stable and evidence-sensitive? | 40/40 correct, which is a ceiling effect rather than proof; V2 is designed around near-ties and repeated runs |
 
-A compact validation framework for an **LLM-based financial decision system**.
-
-**Human ↔ LLM ↔ Decision**
-
-The framework goes beyond accuracy and evaluates decision behaviour across multiple dimensions, including:
-
-- Decision correctness
-- Consistency and stability
-- Framing sensitivity
-- User-position mirroring
-- Belief reinforcement
-- Decision traceability
-
-*Portfolio project · MIT License*
-
-### [LLM Style Audit](https://github.com/DimaDoesCode/LLM-Style-Audit)
-
-Does an LLM reward *how* you write, not *what* you say? An audit of LLM decisions on synthetic social-benefit applications, where identical facts are rendered in different writing styles — formal, rude/sloppy, emotional, and Russian.
-
-Three checks: accuracy by style against a code-computed reference, the *price of style* (shift in approval rate vs. a formal baseline), and whether the model's rationale discloses style as a reason when a decision changes.
-
-*Portfolio project · MIT License*
-
-### [LLM Evidence Update Validation](https://github.com/DimaDoesCode/LLM-Evidence-Update-Validation)
-
-Can an LLM revise a decision when new evidence warrants a reversal — while remaining stable when it doesn't? A sequential evidence-update experiment using synthetic incident-diagnosis cases, grounded in the belief-revision and anchoring literature.
-
-Separates **final decision accuracy** from **decision trajectory correctness**: V1 found a 100% final accuracy but only 60% fully correct trajectories, showing the model sometimes reverses its decision a stage too early or too late even when it lands on the right answer.
-
-*Portfolio project · MIT License*
-
-### [Should the LLM Ask?](https://github.com/DimaDoesCode/LLM-Validation-Should-the-LLM-Ask)
-
-Does an LLM know when to answer, when to ask a clarifying question, and when to challenge a false or unsupported premise? A black-box validation of this three-way decision boundary (`ANSWER` / `ASK` / `CHALLENGE`), grounded in recent clarification and ambiguity-recognition research.
-
-V1 scored **78.6%** on action selection (83.3% on the core ask-vs-answer boundary), with clear failure modes: material ambiguity and unsupported premises prove substantially harder than straightforward missing-information cases. V2 (clarification quality — *does it ask for the right thing?*) is planned next.
-
-*Portfolio project · MIT License*
+**Common limitations.** Synthetic data, one model (`openai/gpt-oss-120b` via Groq), temperature 0, small samples. These are validation prototypes and method demonstrations, not benchmarks and not evidence about any real system. Next steps across the series: repeated runs, a second model, and confidence intervals for every metric.
 
 ---
 
-## Featured Projects
+## Other projects
 
-### [Northstar Model Validation](https://github.com/DimaDoesCode/Northstar-Model-Validation)
+**[MAC-Shaper](https://github.com/DimaDoesCode/MAC-Shaper)**: per-MAC upload and download bandwidth control for OpenWrt (Linux `tc` and `ifb`), with a backend script, LuCI web interface and prebuilt packages.
 
-An independent **model risk and model validation framework** for a machine-learning credit risk model.
+**[HA-OpenWrt-SSH](https://github.com/DimaDoesCode/HA-OpenWrt-SSH)**: Home Assistant custom integration for OpenWrt router monitoring over SSH (CPU temperature, load, RAM, VPN status, disk usage). HACS-ready.
 
-Covers discrimination, calibration, stability and segment performance, with explicit separation between **model performance, validation evidence, and validation conclusions**.
+**Hybrid Conversation** (Home Assistant + Ollama): integration that routes each request between a deterministic rule-based intent engine and a local LLM. <!-- TODO: add repository link -->
 
-*Portfolio project · MIT License*
+### Applied ML and NLP
 
-### [MAC-Shaper](https://github.com/DimaDoesCode/MAC-Shaper)
+| Project | Description |
+|---|---|
+| [NPD prediction](https://github.com/DimaDoesCode/ML_and_Time-Series) | Next purchase date prediction (classical ML) |
+| [NP Multilabel prediction](https://github.com/DimaDoesCode/ML_DL_Multilabel_Prediction) | Next order as a set of product categories (neural network) |
+| [DL & NLP: GeoNames](https://github.com/DimaDoesCode/DL_and_NLP-Geonames) | Geographical name normalization against GeoNames |
+| [DL & CV: Music Genre Prediction](https://github.com/DimaDoesCode/VC_Predicting_Music_Genre) | Music genre classification from album covers |
 
-A lightweight **OpenWrt traffic shaping solution** providing per-MAC upload and download bandwidth control using Linux `tc` and `ifb`.
+<details>
+<summary>Yandex Practicum: Data Science program projects (2023)</summary>
 
-Includes a backend, LuCI interface and packages for embedded devices.
+| Project | Topic |
+|---|---|
+| [Basic Python](https://github.com/DimaDoesCode/Yandex_Practicum-Big_City_Music) | Data validation and user behavior comparison on Yandex.Music data |
+| [Data preprocessing](https://github.com/DimaDoesCode/Yandex_Practicum-Borrower_Reliability_Study) | Impact of family status and children on loan repayment |
+| [Exploratory Data Analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Exploratory_Data_Analysis) | Real estate market analysis |
+| [Statistical Data Analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Statistical_Data_analysis) | Customer behavior analysis for tariff optimization |
+| [Composite Project 1](https://github.com/DimaDoesCode/Yandex_Practicum-Composite_Project-1) | Patterns that determine game success |
+| [Introduction to Machine Learning](https://github.com/DimaDoesCode/Yandex_Practicum-Introduction_to_Machine_Learning) | Classification model for tariff selection |
+| [Supervised Learning](https://github.com/DimaDoesCode/Yandex_Practicum-Supervised_Learning) | Bank customer churn prediction |
+| [Machine Learning in Business](https://github.com/DimaDoesCode/Yandex_Practicum-Machine_Learning_in_Business) | Profit and risk analysis for oil extraction regions |
+| [Composite Project 2](https://github.com/DimaDoesCode/Yandex_Practicum-Composite_Project-2) | Gold recovery rate prediction in industrial processes |
+| [Linear Algebra](https://github.com/DimaDoesCode/Yandex_Practicum-Linear_Algebra) | Data transformation for personal information protection |
+| [Numerical Analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Numerical_Analysis) | Car price prediction |
+| [Time Series](https://github.com/DimaDoesCode/Yandex_Practicum-Time_Series) | Taxi demand forecasting at airports |
+| [Machine Learning for Text](https://github.com/DimaDoesCode/Yandex_Practicum-Machine_Learning_for_Text) | Toxic comment detection |
+| [Computer Vision](https://github.com/DimaDoesCode/Yandex_Practicum-Computer_Vision) | Age prediction from facial images |
+| [Diploma Project](https://github.com/DimaDoesCode/Yandex_Practicum-Diploma_Project) | Customer churn prediction for a telecom operator |
 
-*Independent systems / networking project*
-
----
-
-## Home Assistant & Local AI
-
-### [HA-OpenWrt-SSH](https://github.com/DimaDoesCode/HA-OpenWrt-SSH)
-
-Home Assistant custom integration for monitoring OpenWrt routers via SSH.
-
-Provides CPU temperature, load, RAM, VPN and disk metrics.
-
-### [HA-Hybrid-Conversation](https://github.com/DimaDoesCode/HA-Hybrid-Conversation)
-
-Home Assistant integration combining the native conversation agent with a **local Ollama LLM** for free-form responses.
-
-*No cloud API required · MIT License*
-
----
-
-## Technical Background
-
-Before moving into Data Science and AI validation, my work included:
-
-- Software engineering and system integration
-- Telecommunications and network management
-- Linux / Unix systems
-- Technical support and infrastructure
-- Business analytics and revenue forecasting
-- Mathematical modelling
-
-This background continues to influence how I approach AI systems: **as systems to be tested, measured and understood — not only as models to be trained.**
+</details>
 
 ---
 
-## Data Science & Machine Learning — Portfolio
-
-### Classical ML
-
-| Project | Job Type | Status |
-|:--------|:---------|:-------|
-| [NPD prediction](https://github.com/DimaDoesCode/ML_and_Time-Series) | Predicting the next purchase to better understand customer behavior and optimize business decisions. | Complete |
-| [NP Multilabel prediction](https://github.com/DimaDoesCode/ML_DL_Multilabel_Prediction) | Predicting a user's next order as a set of product categories using a fully connected neural network. | Complete |
-
-<br>
-
-### Yandex Data Science Practicum
-
-| Project | Study Type | Status |
-|:--------|:-----------|:-------|
-| [Basic Python](https://github.com/DimaDoesCode/Yandex_Practicum-Big_City_Music) | Data validation and user behavior comparison using real Yandex.Music data. | Complete |
-| [Data preprocessing](https://github.com/DimaDoesCode/Yandex_Practicum-Borrower_Reliability_Study) | Studying the impact of family status and children on loan repayment. | Complete |
-| [Exploratory Data Analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Exploratory_Data_Analysis) | Real estate market analysis based on Yandex.Real Estate data. | Complete |
-| [Statistical Data Analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Statistical_Data_analysis) | Customer behavior analysis for tariff optimization. | Complete |
-| [Composite Project - 1](https://github.com/DimaDoesCode/Yandex_Practicum-Composite_Project-1) | Identifying patterns that determine game success. | Complete |
-| [Introduction to Machine Learning](https://github.com/DimaDoesCode/Yandex_Practicum-Introduction_to_Machine_Learning) | Building a classification model for tariff selection. | Complete |
-| [Supervised Learning](https://github.com/DimaDoesCode/Yandex_Practicum-Supervised_Learning) | Predicting bank customer churn. | Complete |
-| [Machine Learning in Business](https://github.com/DimaDoesCode/Yandex_Practicum-Machine_Learning_in_Business) | Profit and risk analysis for oil extraction regions. | Complete |
-| [Composite Project - 2](https://github.com/DimaDoesCode/Yandex_Practicum-Composite_Project-2) | Predicting gold recovery rates in industrial processes. | Complete |
-| [Linear Algebra](https://github.com/DimaDoesCode/Yandex_Practicum-Linear_Algebra) | Data transformation for personal information protection. | Complete |
-| [Numerical Analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Numerical_Analysis) | Car price prediction based on technical characteristics. | Complete |
-| [Time Series](https://github.com/DimaDoesCode/Yandex_Practicum-Time_Series) | Forecasting taxi demand at airports. | Complete |
-| [Machine Learning for Text](https://github.com/DimaDoesCode/Yandex_Practicum-Machine_Learning_for_Text) | Toxic comment detection for moderation. | Complete |
-| [Computer Vision](https://github.com/DimaDoesCode/Yandex_Practicum-Computer_Vision) | Age prediction from facial images. | Complete |
-| [Diploma Project](https://github.com/DimaDoesCode/Yandex_Practicum-Diploma_Project) | Predicting customer churn for a telecom operator. | Complete |
-
-<br>
-
-### Deep Learning: NLP & Computer Vision
-
-| Project | Job Type | Status |
-|:--------|:---------|:-------|
-| [DL & NLP – GeoNames](https://github.com/DimaDoesCode/DL_and_NLP-Geonames) | Geographical name normalization using GeoNames. | Complete |
-| [DL & CV – Music Genre Prediction](https://github.com/DimaDoesCode/VC_Predicting_Music_Genre) | Music genre classification based on album cover images. | Complete |
-
-<br>
-
----
-
-<img src="https://komarev.com/ghpvc/?username=DimaDoesCode&style=flat-square&color=blue" alt=""/>
+Most projects here are independent work driven by technical curiosity and a wish to understand systems both from the data side and from the low-level engineering side.

@@ -1,168 +1,72 @@
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/DimaDoesCode/DimaDoesCode/blob/master/README.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
 
-# Аудит решений AI | Валидация LLM и AI-систем
+# Дмитрий Кобелев
 
-Я занимаюсь **валидацией и аудитом систем принятия решений на основе AI**, с особым фокусом на Large Language Models (LLM).
+Количественный аналитик, переходящий в **AI governance, валидацию моделей и оценку LLM**.
+Бэкграунд: радиофизика (МГУ им. Ломоносова), более 12 лет в телекоме, где отвечал за прогнозы выручки, на которые опиралось высшее руководство, и прикладной data science с 2023 года.
 
-В текущей работе меня интересует поведение AI-систем при принятии решений — не только правильность ответа, но и то, сохраняется ли решение **последовательным, устойчивым, воспроизводимым и объяснимым при изменении контекста взаимодействия**.
+Я проверяю, как LLM-системы принятия решений ведут себя на самом деле: не только верен ли ответ, но и устойчиво ли решение, чувствительно ли оно к нужным свидетельствам, честно ли названы причины и понимает ли модель, когда нужно задать вопрос, а не отвечать.
 
-Основные направления:
-
-- **Валидация решений LLM**
-- **AI / Model Risk**
-- **Корректность и согласованность решений**
-- **Тестирование устойчивости и стабильности**
-- **Чувствительность к формулировке контекста (framing sensitivity)**
-- **Риски взаимодействия человека и LLM**
-- **Трассируемость решений**
-- **Воспроизводимые validation-процессы на Python**
-
-Мой профессиональный опыт объединяет **физику, разработку ПО, телекоммуникации, бизнес-аналитику и Data Science**.
-
-Большинство проектов в этом профиле — **независимые и pet-проекты**, созданные для исследования практических технических задач, а не как коммерческая разработка для крупных организаций.
+[LinkedIn](https://www.linkedin.com/in/dima-does-code) · [Hugging Face](https://huggingface.co/dima-does-code)
 
 ---
 
-## Валидация и аудит LLM
+## Валидация LLM-решений
 
-Проекты, посвящённые **валидации и аудиту решений систем на основе LLM** — не просто разработке с использованием LLM, а проверке того, насколько их решения корректны, последовательны и справедливы при внимательном рассмотрении.
+Серия небольших воспроизводимых black-box экспериментов на синтетических данных. Общий метод: контролируемые кейсы и парные возмущения, эталонные решения заданы заранее, сырые ответы сохраняются, типы отказов названы, ограничения указаны сразу.
 
-### [LLM Financial Decision Validation](https://github.com/DimaDoesCode/LLM-Financial-Validation)
+| Проект | Вопрос | Главный результат |
+|---|---|---|
+| [LLM-Financial-Validation](https://github.com/DimaDoesCode/LLM-Financial-Validation) | Зависит ли финансовое решение LLM от формулировки, подачи и обсуждения случая? | 86% точности в целом, но около 50% на кейсах с противоречивыми сигналами; прослеживаемость обоснований слабая (15,8% в целом) |
+| [LLM-Style-Audit](https://github.com/DimaDoesCode/LLM-Style-Audit) | Вознаграждает ли LLM то, как вы пишете, а не то, что говорите? | При явной политике 0 из 120 сравнений стиля изменили решение; при дискреции рецензента все 9 изменений из-за стиля пошли в сторону APPROVE |
+| [LLM-Evidence-Update-Validation](https://github.com/DimaDoesCode/LLM-Evidence-Update-Validation) | Пересматривает ли модель решение в нужный момент, когда свидетельства приходят по шагам? | 100% точности финального решения, но только 60% полностью верных траекторий |
+| [LLM-Validation-Should-the-LLM-Ask](https://github.com/DimaDoesCode/LLM-Validation-Should-the-LLM-Ask) | Знает ли модель, когда отвечать, когда спросить, а когда оспорить ложную посылку? | 78,6% в целом; 50% на существенно неоднозначных запросах и на ложных посылках |
+| [LLM-Validation-Candidate-Screening-Ranking-Stability](https://github.com/DimaDoesCode/LLM-Validation-Candidate-Screening-Ranking-Stability) | Стабильно ли и чувствительно ли к свидетельствам ранжирование кандидатов LLM? | 40/40 верно, это эффект потолка, а не доказательство; V2 строится вокруг близких кандидатов и повторных прогонов |
 
-Компактный фреймворк для валидации **финансовой системы принятия решений на основе LLM**.
-
-**Human ↔ LLM ↔ Decision**
-
-Фреймворк выходит за рамки обычной оценки accuracy и исследует поведение системы по нескольким направлениям:
-
-- Корректность решений
-- Согласованность и стабильность
-- Чувствительность к формулировке контекста
-- Отражение позиции пользователя
-- Закрепление пользовательских убеждений
-- Трассируемость решений
-
-*Portfolio project · MIT License*
-
-### [LLM Style Audit](https://github.com/DimaDoesCode/LLM-Style-Audit)
-
-Вознаграждает ли LLM за *то, как* написан текст, а не за *то, что* в нём сказано? Аудит решений LLM на синтетических заявках на социальные льготы, где одни и те же факты поданы в разных стилях — формальном, небрежно-грубом, эмоциональном и на русском языке.
-
-Три проверки: точность по стилям относительно эталона, вычисленного кодом; *цена стиля* — сдвиг доли одобрений относительно формального базового варианта; и раскрывает ли модель влияние стиля в своём обосновании, когда решение меняется.
-
-*Portfolio project · MIT License*
-
-### [LLM Evidence Update Validation](https://github.com/DimaDoesCode/LLM-Evidence-Update-Validation)
-
-Способна ли LLM пересмотреть решение, когда новые данные требуют разворота — и при этом сохранять стабильность, когда разворот не требуется? Эксперимент на последовательном поступлении улик с синтетическими кейсами диагностики инцидентов, опирающийся на исследования belief revision и anchoring-эффектов.
-
-Разделяет **точность финального решения** и **корректность траектории решения**: в V1 финальная точность составила 100%, но полностью корректную траекторию модель прошла лишь в 60% случаев — то есть решение иногда меняется на шаг раньше или позже, даже если итоговый ответ верный.
-
-*Portfolio project · MIT License*
-
-### [Should the LLM Ask?](https://github.com/DimaDoesCode/LLM-Validation-Should-the-LLM-Ask)
-
-Знает ли LLM, когда нужно ответить сразу, когда — задать уточняющий вопрос, а когда — оспорить ложную или необоснованную предпосылку в запросе? Чёрно-ящичная валидация этой трёхвариантной границы решения (`ANSWER` / `ASK` / `CHALLENGE`), опирающаяся на современные исследования по уточняющим вопросам и распознаванию неоднозначности.
-
-V1 показал **78.6%** точности выбора действия (83.3% на ключевой границе «спросить vs ответить»), с выраженными паттернами ошибок: содержательная неоднозначность и необоснованные предпосылки даются модели заметно хуже, чем очевидные случаи нехватки информации. Далее запланирован V2 — качество уточнения (*правильно ли сформулирован вопрос?*).
-
-*Portfolio project · MIT License*
+**Общие ограничения.** Синтетические данные, одна модель (`openai/gpt-oss-120b` через Groq), temperature 0, малые выборки. Это прототипы валидации и демонстрация метода, а не бенчмарки и не свидетельство о реальных системах. Дальше для всей серии: повторные прогоны, вторая модель и доверительные интервалы для каждой метрики.
 
 ---
 
-## Избранные проекты
+## Другие проекты
 
-### [Northstar Model Validation](https://github.com/DimaDoesCode/Northstar-Model-Validation)
+**[MAC-Shaper](https://github.com/DimaDoesCode/MAC-Shaper)**: ограничение входящей и исходящей полосы по MAC-адресам для OpenWrt (Linux `tc` и `ifb`), со скриптом, веб-интерфейсом LuCI и готовыми пакетами.
 
-Независимый **фреймворк Model Risk и Model Validation** для ML-модели кредитного риска.
+**[HA-OpenWrt-SSH](https://github.com/DimaDoesCode/HA-OpenWrt-SSH)**: интеграция Home Assistant для мониторинга роутеров OpenWrt по SSH (температура CPU, нагрузка, RAM, статус VPN, диск). Готова для HACS.
 
-Охватывает discrimination, calibration, stability и segment performance, разделяя **характеристики модели, validation evidence и итоговые validation conclusions**.
+**Hybrid Conversation** (Home Assistant + Ollama): интеграция, которая направляет каждый запрос либо в детерминированный движок интентов, либо в локальную LLM. <!-- TODO: добавить ссылку на репозиторий -->
 
-*Portfolio project · MIT License*
+### Прикладной ML и NLP
 
-### [MAC-Shaper](https://github.com/DimaDoesCode/MAC-Shaper)
+| Проект | Описание |
+|---|---|
+| [NPD prediction](https://github.com/DimaDoesCode/ML_and_Time-Series) | Предсказание даты следующей покупки (классический ML) |
+| [NP Multilabel prediction](https://github.com/DimaDoesCode/ML_DL_Multilabel_Prediction) | Следующий заказ как набор категорий товаров (нейросеть) |
+| [DL & NLP: GeoNames](https://github.com/DimaDoesCode/DL_and_NLP-Geonames) | Нормализация географических названий по GeoNames |
+| [DL & CV: Music Genre Prediction](https://github.com/DimaDoesCode/VC_Predicting_Music_Genre) | Классификация жанра музыки по обложкам альбомов |
 
-Лёгкое решение для **управления сетевым трафиком в OpenWrt**, обеспечивающее ограничение скорости загрузки и выгрузки для отдельных MAC-адресов с использованием Linux `tc` и `ifb`.
+<details>
+<summary>Яндекс Практикум: проекты программы Data Science (2023)</summary>
 
-Включает backend, интерфейс LuCI и пакеты для embedded-устройств.
+| Проект | Тема |
+|---|---|
+| [Basic Python](https://github.com/DimaDoesCode/Yandex_Practicum-Big_City_Music) | Проверка данных и сравнение поведения пользователей на данных Яндекс.Музыки |
+| [Data preprocessing](https://github.com/DimaDoesCode/Yandex_Practicum-Borrower_Reliability_Study) | Влияние семейного положения и детей на возврат кредита |
+| [Exploratory Data Analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Exploratory_Data_Analysis) | Анализ рынка недвижимости |
+| [Statistical Data Analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Statistical_Data_analysis) | Анализ поведения клиентов для оптимизации тарифов |
+| [Composite Project 1](https://github.com/DimaDoesCode/Yandex_Practicum-Composite_Project-1) | Закономерности, определяющие успех игр |
+| [Introduction to Machine Learning](https://github.com/DimaDoesCode/Yandex_Practicum-Introduction_to_Machine_Learning) | Модель классификации для выбора тарифа |
+| [Supervised Learning](https://github.com/DimaDoesCode/Yandex_Practicum-Supervised_Learning) | Предсказание оттока клиентов банка |
+| [Machine Learning in Business](https://github.com/DimaDoesCode/Yandex_Practicum-Machine_Learning_in_Business) | Анализ прибыли и рисков для регионов нефтедобычи |
+| [Composite Project 2](https://github.com/DimaDoesCode/Yandex_Practicum-Composite_Project-2) | Предсказание коэффициента извлечения золота в промышленном процессе |
+| [Linear Algebra](https://github.com/DimaDoesCode/Yandex_Practicum-Linear_Algebra) | Преобразование данных для защиты персональной информации |
+| [Numerical Analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Numerical_Analysis) | Предсказание цены автомобиля |
+| [Time Series](https://github.com/DimaDoesCode/Yandex_Practicum-Time_Series) | Прогноз спроса на такси в аэропортах |
+| [Machine Learning for Text](https://github.com/DimaDoesCode/Yandex_Practicum-Machine_Learning_for_Text) | Выявление токсичных комментариев |
+| [Computer Vision](https://github.com/DimaDoesCode/Yandex_Practicum-Computer_Vision) | Предсказание возраста по фотографии лица |
+| [Diploma Project](https://github.com/DimaDoesCode/Yandex_Practicum-Diploma_Project) | Предсказание оттока клиентов телеком-оператора |
 
-*Independent systems / networking project*
-
----
-
-## Home Assistant & Local AI
-
-### [HA-OpenWrt-SSH](https://github.com/DimaDoesCode/HA-OpenWrt-SSH)
-
-Custom integration для Home Assistant, обеспечивающая мониторинг роутеров OpenWrt через SSH.
-
-Предоставляет данные о температуре CPU, нагрузке, RAM, VPN и дисковом пространстве.
-
-### [HA-Hybrid-Conversation](https://github.com/DimaDoesCode/HA-Hybrid-Conversation)
-
-Custom integration для Home Assistant, объединяющая штатный conversation agent с **локальной LLM Ollama** для формирования свободных ответов.
-
-*No cloud API required · MIT License*
-
----
-
-## Технический опыт
-
-До перехода в Data Science и AI validation моя работа включала:
-
-- Разработку ПО и системную интеграцию
-- Телекоммуникационные и сетевые системы
-- Linux / Unix
-- Техническую поддержку и IT-инфраструктуру
-- Бизнес-аналитику и прогнозирование выручки
-- Математическое моделирование
-
-Этот опыт продолжает определять мой подход к AI-системам: **я рассматриваю их как системы, которые необходимо тестировать, измерять и понимать, а не только как модели, которые нужно обучать.**
+</details>
 
 ---
 
-## Data Science & Machine Learning — Portfolio
-
-### Classical ML
-
-| Проект | Задача | Статус |
-|:-------|:-------|:-------|
-| [NPD prediction](https://github.com/DimaDoesCode/ML_and_Time-Series) | Предсказание следующей покупки для анализа поведения клиентов и оптимизации бизнес-решений. | Complete |
-| [NP Multilabel prediction](https://github.com/DimaDoesCode/ML_DL_Multilabel_Prediction) | Предсказание следующего заказа пользователя как набора категорий товаров с использованием полносвязной нейронной сети. | Complete |
-
-<br>
-
-### Yandex Data Science Practicum
-
-| Проект | Задача | Статус |
-|:-------|:-------|:-------|
-| [Basic Python](https://github.com/DimaDoesCode/Yandex_Practicum-Big_City_Music) | Проверка данных и сравнение поведения пользователей на реальных данных Yandex.Music. | Complete |
-| [Data preprocessing](https://github.com/DimaDoesCode/Yandex_Practicum-Borrower_Reliability_Study) | Исследование влияния семейного положения и наличия детей на возврат кредита. | Complete |
-| [Exploratory Data Analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Exploratory_Data_Analysis) | Анализ рынка недвижимости на данных Yandex.Real Estate. | Complete |
-| [Statistical Data Analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Statistical_Data_analysis) | Анализ поведения клиентов для оптимизации тарифов. | Complete |
-| [Composite Project - 1](https://github.com/DimaDoesCode/Yandex_Practicum-Composite_Project-1) | Выявление закономерностей, определяющих успешность компьютерных игр. | Complete |
-| [Introduction to Machine Learning](https://github.com/DimaDoesCode/Yandex_Practicum-Introduction_to_Machine_Learning) | Построение модели классификации для выбора тарифа. | Complete |
-| [Supervised Learning](https://github.com/DimaDoesCode/Yandex_Practicum-Supervised_Learning) | Предсказание оттока клиентов банка. | Complete |
-| [Machine Learning in Business](https://github.com/DimaDoesCode/Yandex_Practicum-Machine_Learning_in_Business) | Анализ прибыли и рисков для регионов добычи нефти. | Complete |
-| [Composite Project - 2](https://github.com/DimaDoesCode/Yandex_Practicum-Composite_Project-2) | Предсказание коэффициента восстановления золота в промышленном процессе. | Complete |
-| [Linear Algebra](https://github.com/DimaDoesCode/Yandex_Practicum-Linear_Algebra) | Преобразование данных для защиты персональной информации. | Complete |
-| [Numerical Analysis](https://github.com/DimaDoesCode/Yandex_Practicum-Numerical_Analysis) | Предсказание стоимости автомобилей по техническим характеристикам. | Complete |
-| [Time Series](https://github.com/DimaDoesCode/Yandex_Practicum-Time_Series) | Прогнозирование спроса на такси в аэропортах. | Complete |
-| [Machine Learning for Text](https://github.com/DimaDoesCode/Yandex_Practicum-Machine_Learning_for_Text) | Определение токсичных комментариев для модерации. | Complete |
-| [Computer Vision](https://github.com/DimaDoesCode/Yandex_Practicum-Computer_Vision) | Предсказание возраста по фотографии. | Complete |
-| [Diploma Project](https://github.com/DimaDoesCode/Yandex_Practicum-Diploma_Project) | Предсказание оттока клиентов телекоммуникационного оператора. | Complete |
-
-<br>
-
-### Deep Learning: NLP & Computer Vision
-
-| Проект | Задача | Статус |
-|:-------|:-------|:-------|
-| [DL & NLP – GeoNames](https://github.com/DimaDoesCode/DL_and_NLP-Geonames) | Нормализация географических названий с использованием GeoNames. | Complete |
-| [DL & CV – Music Genre Prediction](https://github.com/DimaDoesCode/VC_Predicting_Music_Genre) | Классификация музыкального жанра по изображению обложки альбома. | Complete |
-
-<br>
-
----
-
-<img src="https://komarev.com/ghpvc/?username=DimaDoesCode&style=flat-square&color=blue" alt=""/>
+Большинство проектов здесь это самостоятельная работа, продиктованная техническим любопытством и желанием понять системы и со стороны данных, и со стороны низкоуровневой инженерии.
