@@ -5,9 +5,22 @@
 Quantitative analyst moving into **AI governance, model validation and LLM evaluation**.
 Background: Radiophysics (Lomonosov Moscow State University), 12+ years in telecom owning revenue forecasts that senior leadership relied on, and applied data science since 2023.
 
-I test how LLM-based decision systems actually behave: not only whether the answer is correct, but whether the decision is stable, sensitive to the right evidence, honest about its reasons, and aware of when to ask instead of answer.
+I test how LLM-based decision systems actually behave: not only whether the answer is correct, but whether the decision is stable, sensitive to the right evidence, honest about its reasons, and aware of when to ask instead of answer. I also read developers' published evidence about frontier models and check how well it supports their conclusions.
 
 [LinkedIn](https://www.linkedin.com/in/dima-does-code) · [Hugging Face](https://huggingface.co/dima-does-code)
+
+---
+
+## Frontier AI evidence review
+
+**[System Card Reporting Review](https://github.com/DimaDoesCode/System-Card-Reporting-Review)**: a reusable method, and a first case study, for checking how well an AI system card reports the evidence behind its conclusions. Case study: four sections of the GPT-5.6 System Card (11 evaluations, 5 claims, 11 reporting criteria fixed before reading).
+
+- No evaluation states the number of runs (0 of 11); sample size is fully stated in none (4 partly).
+- Automated graders: validation against human labels is shown for none of the 8 evaluations where it applies (1 partly).
+- Decision thresholds are justified in none of the 10 applicable cases.
+- The card also does several things well: counts behind rates are shown in two figures, and the lack of multiple-comparison correction is stated openly.
+
+This is a review of the document's reporting, **not a safety assessment of any model**, and it makes no claim about anyone's intentions. Independent work, not affiliated with or endorsed by the developer. Status: draft; questions were sent to the authors on [date].
 
 ---
 
@@ -18,12 +31,12 @@ A series of small, reproducible black-box experiments on synthetic data. Shared 
 | Project | Question | Headline result |
 |---|---|---|
 | [LLM-Financial-Validation](https://github.com/DimaDoesCode/LLM-Financial-Validation) | Does an LLM financial decision depend on how the case is worded, framed and discussed? | 86% accuracy overall, but about 50% on conflicting-signal cases; rationale traceability is weak (15.8% overall) |
-| [LLM-Style-Audit](https://github.com/DimaDoesCode/LLM-Style-Audit) | Does an LLM reward how you write, not what you say? | Under an explicit policy 0 of 120 style comparisons changed a decision; with reviewer discretion all 9 style-driven changes went toward APPROVE |
+| [LLM-Style-Audit](https://github.com/DimaDoesCode/LLM-Style-Audit) | Does the model's decision depend on writing style, and does its rationale say so? | Under an explicit policy 0 of 120 style comparisons changed a decision; with reviewer discretion all 9 style-driven changes went toward APPROVE (not statistically significant); style is almost never named as a reason |
 | [LLM-Evidence-Update-Validation](https://github.com/DimaDoesCode/LLM-Evidence-Update-Validation) | Does the model revise a decision at the right moment when evidence arrives step by step? | 100% final accuracy, but only 60% fully correct decision trajectories |
 | [LLM-Validation-Should-the-LLM-Ask](https://github.com/DimaDoesCode/LLM-Validation-Should-the-LLM-Ask) | Does the model know when to answer, ask, or challenge a false premise? | 78.6% overall; 50% on materially ambiguous requests and on false premises |
-| [LLM-Validation-Candidate-Screening-Ranking-Stability](https://github.com/DimaDoesCode/LLM-Validation-Candidate-Screening-Ranking-Stability) | Is an LLM ranking of job candidates stable and evidence-sensitive? | 40/40 correct, which is a ceiling effect rather than proof; V2 is designed around near-ties and repeated runs |
+| [LLM-Validation-Candidate-Screening-Ranking-Stability](https://github.com/DimaDoesCode/LLM-Validation-Candidate-Screening-Ranking-Stability) | Is an LLM ranking stable and evidence-sensitive under controlled perturbations? | 40/40 correct, which is a ceiling effect rather than proof of reliability; V2 is designed around near-ties and repeated runs |
 
-**Common limitations.** Synthetic data, one model (`openai/gpt-oss-120b` via Groq), temperature 0, small samples. These are validation prototypes and method demonstrations, not benchmarks and not evidence about any real system. Next steps across the series: repeated runs, a second model, and confidence intervals for every metric.
+**Common limitations.** Synthetic data, one model (`openai/gpt-oss-120b` via Groq), temperature 0, small samples. These are validation prototypes and method demonstrations, not benchmarks and not evidence about any real system or about frontier models in general. Next steps across the series: repeated runs, a second model, and confidence intervals for every metric.
 
 ---
 
@@ -33,7 +46,7 @@ A series of small, reproducible black-box experiments on synthetic data. Shared 
 
 **[HA-OpenWrt-SSH](https://github.com/DimaDoesCode/HA-OpenWrt-SSH)**: Home Assistant custom integration for OpenWrt router monitoring over SSH (CPU temperature, load, RAM, VPN status, disk usage). HACS-ready.
 
-**Hybrid Conversation** (Home Assistant + Ollama): integration that routes each request between a deterministic rule-based intent engine and a local LLM. <!-- TODO: add repository link -->
+**[Hybrid Conversation](https://github.com/DimaDoesCode/HA-Hybrid-Conversation)** (Home Assistant + Ollama): integration that routes each request between a deterministic rule-based intent engine and a local LLM.
 
 ### Applied ML and NLP
 
